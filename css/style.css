@@ -2,4 +2,66 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid lightcoral;
+}
+
+:root{
+    --bg-grey: rgba(72, 72, 72, 0.5)
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+}
+
+.flex{
+    display: flex;
+}
+
+button{
+    background-color: var(--bg-grey);
+    color: white;
+    border-radius: 5px;
+}
+.button-container{
+    justify-content: flex-end;
+}
+
+.container{
+    background-color: black;
+}
+
+.main-container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+.img-card img{
+    display: block;
+    width: 100%;
+    background-size: cover;
+}
+
+.img-container{
+    color: white;
+    font-size: 0.8rem;
+    background-color: var(--bg-grey);
+    position: relative;
+}
+
+.pinco-pallo{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    background-color: var(--bg-grey);
+}
+
+.cards-container{
+    flex-wrap: wrap;
+    row-gap: 0.5rem;
+    width: 100%;
+}
+
+.container-card{
+    width: calc((100% / 7) - (3rem/7));
 }
